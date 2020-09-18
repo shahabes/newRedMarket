@@ -95,10 +95,58 @@ header nav .menu .item{
     cursor: pointer;
     font-family: vazir;
     transition: all ease .5s;
+    color: var(--primary-color);
 }
 
 header nav .menu .item:hover{
     background: var(--primary-color);
     border-radius: 10px;
     color: white;
+}
+
+/* This is for active mode. */
+/* 
+.item.active{
+    border: 1px solid var(--primary-color);
+} */
+
+.item.left{
+    float: left;
+}
+
+.mft-reverse{
+    transform: rotate(180deg);
+}
+
+.mft-90deg-rotate{
+    transform: rotate(90deg);
+}
+
+.large-icon{
+    font-size: 20px;
+}
+
+.mft-clear{
+    clear: both;
+}
+
+.mft-header{
+    max-width: var(--main-width);
+    margin: 30px auto 0;
+    text-align: right;
+    direction: rtl;
+}
+
+.mft-header .mft-main-title{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-family: vazir;
+    color: var(--primary-color);
+    font-size: 36px;
+}
+
+.mft-header img{
+    display: inline-block;
+    vertical-align: middle;
 }
