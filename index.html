@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
+    <!-- swipper slider style -->
+    <link rel="stylesheet" href="js/slider/swipper.min.css">
 
     <!-- style sheet -->
-
-
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
@@ -36,7 +38,7 @@
             <!-- it clears the effect of the float. -->
             <div class="mft-clear"></div>
         </nav>
-        
+
         <section class="mft-header">
             <img src="media/images/logo.png" alt="red market logo">
             <h1 class="mft-main-title">
@@ -44,6 +46,80 @@
             </h1>
         </section>
     </header>
+    <section class="body-main-page">
+        <aside class="mft-sidebar">
+
+            <section class="mft-search">
+                <h2 class="mft-red-title">
+                    جستجو
+                </h2>
+                <form action="">
+                    <input type="text" class="mft-searchbox mft-card" placeholder="هر چیزی را جستجو کنید...">
+                </form>
+            </section>
+
+        </aside>
+        <main class="mft-main-column">
+            <h2 class="mft-red-title">
+                ویژه ها
+            </h2>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="media/images/slider/slider01.jpg" alt="">
+                        <p class="mft-slider-caption">
+                            فروش لپتاپ های سرفیس
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="media/images/slider/slider02.jpg" alt="">
+                        <p class="mft-slider-caption">
+                            فروش اخرین گجت اپل
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="media/images/slider/slider03.jpg" alt="">
+                        <p class="mft-slider-caption">
+                            بررسی لپتاپ جدید ایسوس
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="media/images/slider/slider04.jpg" alt="">
+                        <p class="mft-slider-caption">
+                            شیائومی را تست کنید.
+                        </p>
+                    </div>
+                  
+                </div>
+            </div>
+
+        </main>
+        <div class="mft-clear"></div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- swipper slider java script -->
+    <script src="js/slider/swipper.min.js"></script>
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            centeredSlides: true,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+        });      </script>
 </body>
 
 </html>
